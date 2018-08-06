@@ -9,4 +9,4 @@ def makeUrlForShoe(shoeId):
 def makeUrlWithSize(shoeId, size):
     sizeNumber = getSizeForUrl(size)
     baseUrl = makeUrlForShoe(shoeId)
-    return baseUrl + '?forceSelSize=' + shoeId + '_' + sizeNumber
+    return baseUrl + '?forceSelSize=' + shoeId + '_' + str(sizeNumber)
